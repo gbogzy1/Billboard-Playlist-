@@ -3,8 +3,8 @@ from bs4 import BeautifulSoup
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import pprint
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id="f18a167a85304c81b27ae30ea72126b3",
-                                               client_secret="190516a7b8284a6d83e2117aadfa9e4b",
+sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=CLIENT_ID,
+                                               client_secret=CLIENT_SECRET,
                                                redirect_uri="http://example.com",
                                                show_dialog=True,
                                                cache_path=".cache",
